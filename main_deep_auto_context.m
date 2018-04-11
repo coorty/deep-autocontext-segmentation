@@ -2,7 +2,10 @@
 % Author: zhaopace@foxmail.com
 % Version: 1.0
 % Desc: 
-% 	Deep auto-context model used for object segmentation.
+% 	Deep auto-context model used for object segmentation (applied in Weizmann Horses Dataset) 
+% https://avaminzhang.wordpress.com/2012/12/07/%E3%80%90dataset%E3%80%91weizmann-horses/
+%
+% Revised Records:
 %
 
 % Clear workspace
@@ -38,7 +41,6 @@ imgLabName = 'horse012.jpg'
 
 img = imread(fullfile(dirData, 'images', imgName));
 lab = imread(fullfile(dirData, 'labels', imgLabName));
-
 [rows,cols] = size(img);
 
 % Extract all patches from image
